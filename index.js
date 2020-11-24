@@ -34,15 +34,21 @@ const copyToClipBoard = input => {
   window.getSelection().removeAllRanges();
 }
 
+let popupDelay = false
 const showPopup = (message, element) => {
+    if(popupDelay === true) return;
     const popup = `
         <div class="popup">
             ${message}
         </div>
     `;
+    popupDelay = true;
     
     element.innerHTML = popup;
-    setTimeout(() => element.innerHTML = '', 3100)
+    setTimeout(() => { 
+        element.innerHTML = '';
+        popupDelay = false
+    }, 3100)
     
 }
 
