@@ -57,7 +57,7 @@ button.onclick = () => {
     input.value = createdImei
     if(document.getElementById('checkbox').checked){
         copyToClipBoard(input);
-        showPopup('Imei is Copied', document.getElementById('popup-container'));
+        showPopup('Imei is copied', document.getElementById('popup-container'));
     }
     
 }
