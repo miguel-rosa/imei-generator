@@ -95,3 +95,21 @@ body {
     }
 }
 
+.footer {
+    text-align:center;
+    color:white;
+    font-family:poppins;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    font-size:14px;
+
+}
+.link {
+    color:white;
+    transition:color .3s ease-in-out;
+}
+
+.link:hover{
+    color:#a7ddb5
+}
