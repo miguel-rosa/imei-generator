@@ -74,7 +74,7 @@ body {
     border-radius:5px;
     font-size:17px;
     font-family:poppins;
-    animation: showPopup 10s ease-in-out;
+    animation: showPopup 3s ease-in-out;
     transform:translateY(100px);
 }
 
@@ -91,6 +91,7 @@ body {
     }
     100%{
         transform:translateY(100px);
+
     }
 }
 
@@ -136,17 +137,17 @@ body {
 
     @keyframes showPopup {
         0%{
-            transform:translateY(2000px)
+            transform:translateY(110px)
         }   
         10%{
-            transform:translateY(0px)
+            transform:translateY(-20px)
         }  
     
         90%{
-            transform:translateY(0px)
+            transform:translateY(-20px)
         }
         100%{
-            transform:translateY(2000px);
+            transform:translateY(110px);
     
         }
     }
