@@ -74,7 +74,7 @@ body {
     border-radius:5px;
     font-size:17px;
     font-family:poppins;
-    animation: showPopup 3s ease-in-out;
+    animation: showPopup 10s ease-in-out;
     transform:translateY(100px);
 }
 
@@ -91,7 +91,6 @@ body {
     }
     100%{
         transform:translateY(100px);
-
     }
 }
 
@@ -112,4 +111,43 @@ body {
 
 .link:hover{
     color:#a7ddb5
+}
+
+@media (max-width:768px) {
+    h1 {
+        text-align:center;
+        line-height:1;
+    }
+    
+    input#input {
+        max-width:100%;
+        border-radius:6px 6px 0 0;
+        text-align:center
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    button#button {
+        width:100%;
+        border-radius:0 0 6px 6px;
+    }
+
+    @keyframes showPopup {
+        0%{
+            transform:translateY(2000px)
+        }   
+        10%{
+            transform:translateY(0px)
+        }  
+    
+        90%{
+            transform:translateY(0px)
+        }
+        100%{
+            transform:translateY(2000px);
+    
+        }
+    }
 }
